@@ -23,17 +23,13 @@ export default function Home({ allPostsData }) {
 
       <section className={utilStyles.headingMd}>
         <p>
-          Hello! My name is Chip Long. I have been working as a manual software
-          quality assurance engineer for the past 12 years. I started that
-          career working at a third party testing house so I was able to test a
-          very wide variety of software. Everything from games, to websites, to
-          security programs. I have also worked briefly in the insurance world,
-          but mostly the last several years have been working in FinTech on
-          mobile banking solutions.
+          Hello! My name is Chip Long. I have done software QA for the past 13
+          years. I have since learned to do full stack development and have
+          transitioned to the dark side. Now other people can find MY bugs!
         </p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          (This is a sample website - you too can build a site like this with
+          the <a href="https://nextjs.org/learn">Next.js tutorial</a>.)
         </p>
       </section>
 
