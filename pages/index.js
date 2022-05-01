@@ -1,86 +1,30 @@
 import Head from "next/head";
 import Link from "next/link";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Home() {
   return (
-    <div className="container">
+    <Layout home>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
       </Head>
 
-      <main>
-        <h1 className="title">
-          Read{" "}
-          <Link href="/posts/first-post">
-            <a>this page!</a>
-          </Link>
-        </h1>
-      </main>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+      <section className={utilStyles.headingMd}>
+        <p>
+          Hello! My name is Chip Long. I have been working as a manual software
+          quality assurance engineer for the past 12 years. I started that
+          career working at a third party testing house so I was able to test a
+          very wide variety of software. Everything from games, to websites, to
+          security programs. I have also worked briefly in the insurance world,
+          but mostly the last several years have been working in FinTech on
+          mobile banking solutions.
+        </p>
+        <p>
+          (This is a sample website - you’ll be building a site like this on{" "}
+          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+        </p>
+      </section>
+    </Layout>
   );
 }
